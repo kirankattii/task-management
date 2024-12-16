@@ -1,12 +1,11 @@
 
-// pages/Task.tsx
 import React, { useContext, useEffect, useState } from "react";
 import TaskList from "../components/TaskList";
 import AddTaskModal from "../components/AddTaskModal";
 import { AppContext } from "../context/AppContext";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Tasks, ApiResponse } from '../types'; 
+import { Tasks } from '../types'; 
 import { PlusIcon, FunnelIcon } from '@heroicons/react/24/outline'; // Import icons
 import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/outline';
 

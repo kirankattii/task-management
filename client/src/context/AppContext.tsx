@@ -2,7 +2,7 @@ import { createContext, useEffect, useState, ReactNode } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { AppContextType, Tasks, UserData } from "../types";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 
 export const AppContext = createContext<AppContextType>({} as AppContextType);
