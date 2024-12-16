@@ -19,11 +19,6 @@ interface TaskListProps {
   onDeleteTask: (taskId: string) => void;
 }
 
-interface DeleteDialogState {
-  isOpen: boolean;
-  taskId: string;
-  taskTitle: string;
-}
 
 
 const TaskList: React.FC<TaskListProps> = ({ tasks, loading, onEditTask, onDeleteTask }) => {
