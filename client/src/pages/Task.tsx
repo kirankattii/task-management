@@ -102,13 +102,6 @@ const handleUpdateTask = async (updatedTask: Tasks) => {
   };
   
   
-  const getFilteredTasks = () => {
-  return tasks.filter(task => {
-    const matchesStatus = !statusFilter || task.status === statusFilter;
-    const matchesPriority = !priorityFilter || task.priority === priorityFilter;
-    return matchesStatus && matchesPriority;
-  });
-};
 
 
 const [sortConfig, setSortConfig] = useState<SortConfig>({
